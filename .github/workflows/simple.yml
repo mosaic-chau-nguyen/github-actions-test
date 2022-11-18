@@ -1,4 +1,4 @@
-name: Shell Commands
+name: CI
 
 on: [push]
 
@@ -12,4 +12,5 @@ jobs:
         run: |
           node -v
           npm -v
-    
+      - name: run curl
+        run: curl https://www.google.com
