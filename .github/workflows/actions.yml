@@ -10,6 +10,10 @@ jobs:
         run: |
           pwd
           ls -la
+      - name: show env vars
+        run: |
+          echo $GITHUB_REPOSITORY
+          echo ${{ github.token }}
       - name: checkout code
         uses: actions/checkout@v3
         with:
