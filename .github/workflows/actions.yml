@@ -13,6 +13,7 @@ jobs:
       - name: show env vars
         run: |
           echo $GITHUB_REPOSITORY
+          echo $GITHUB_TOKEN
           echo ${{ github.token }}
       - name: checkout code
         uses: actions/checkout@v3
