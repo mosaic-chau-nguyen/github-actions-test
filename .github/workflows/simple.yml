@@ -14,3 +14,9 @@ jobs:
           npm -v
       - name: run curl
         run: curl https://www.google.com
+
+      - name: run python
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
